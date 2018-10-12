@@ -1,0 +1,337 @@
+.main {
+	.banner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color:  #87509C;
+		.wrapper_baner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 1140px;
+			margin-bottom: 13%;
+			margin-top: 19%;
+			h1 {
+				font-family: 'Titillium Web';
+				font-weight: bold;
+				font-size: 4.1rem;
+				line-height: 4.8rem;
+				text-align: center;
+				color: $white;
+				margin-top: -5%;
+				margin-bottom: 10%;
+			}
+			// .btn {
+			// 	@include button(#EB7D4B, #fff, #C86A40)
+			// }		
+		}
+	}
+
+	.services {
+		// height: 747px;
+		background-color: #17C2A4;	
+		.wrapper_services {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 10%;
+			.columns_services {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				article {
+					text-align: center;
+					margin-top: 80px;
+					img {
+						height: 125px;
+					}
+					h4 {
+						font-size: 2.4rem;
+						color: $white;
+					}
+					p {
+						font-size: 1.6rem;
+						color: $white;
+					}
+				}
+			}	
+		}	
+	}
+
+	.team {
+		// height: 916px;
+		background-color: #E7F1F8;	
+		.wrapper_team {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 10%;
+			.columns_team {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				article {
+					text-align: center;
+					margin-top: 80px;
+					.team_h4 {
+						margin-bottom: 0;
+						font-size: 2.4rem;
+						color: #3C4761;
+					}
+					h6 {
+						font-size: 1.6rem;
+						color: #48C1E9;
+						margin-top: 0;
+						margin-bottom: 28px;
+					}
+					p {
+						font-size: 1.6rem;
+						line-height: 2.4rem;
+						color: #3C4761;
+					}
+					.icons {
+						display: flex;
+						justify-content: center;
+						width: 100%;
+						a {
+							margin: 0 6px;
+						}
+					}
+				}
+			}	
+		}	
+	}
+
+	.skills {
+		// height: 655px;
+		background-color: #FFF;	
+		.wrapper_skills {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 10%;
+			.columns_skills {
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				article {
+					text-align: center;
+					margin-top: 80px;
+					// Progress Bar
+					.progress_bar {
+						position: relative;
+						p {
+							position: absolute;
+							font-size: 5rem;
+							color: #3c4761;
+							font-weight: lighter;
+							top: -5%;
+							left: 27%;
+						}
+					}
+					// End Pogress Bar
+					h4 {
+						font-size: 2.4rem;
+						color: #3C4761;
+					}
+				}
+			}	
+		}	
+	}
+
+	.portfolio {
+		// height: 1423px;
+		background-color: #FFDD99;
+		.wrapper_portfolio {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 10%;
+			.nav {
+				ul {
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					height: 33px;
+					list-style: none;
+					padding-left: 0;
+					li {
+						position: relative;
+						width: 77px;
+						text-align: center;
+						margin: 0 5px;
+						a {
+							width: 100%;
+							height: 100%;
+							display: inline-block;
+							padding: 4px;
+							background-color: #EBC985;
+							color: #393939;
+							font-size: 1.6rem;
+							text-decoration: none;
+							border-radius: 4px;
+							&:hover {
+								background-color: white;
+								border-radius: 4px;
+							}
+						}
+					}
+				}
+			}
+			.desktops {
+				// width: 100%;
+				margin-top: 30px;
+				display: flex;
+				flex-wrap: wrap;
+				figure {
+					width: 49%;
+					text-align: center;
+					margin: 0;
+					margin-bottom: 60px;
+					img {
+						height: 310px;
+					}
+					figcaption {
+						margin-top: 22px;
+						font-size: 1.8rem;
+						color: #393939;
+					}
+				}
+			}
+		}
+	}
+
+	.testimonials {
+		// height: 895px;
+		background-color: #D74680;
+		.wrapper_testimonials {
+			max-width: 1140px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 2%;
+			.people_reviews {
+				width: 100%;
+				margin-top: 30px;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				article {
+					width: 49%;
+					margin-bottom: 8%;
+					display: flex;
+					img {
+						height: 100px;
+					}
+					.review {
+						margin-left: 46px;
+						p {
+							margin: 0;
+							color: white;
+							font-size: 2.1rem;
+							font-style: italic;
+						}
+						h4 {
+							margin-bottom: 0;
+							color: white;
+							font-size: 2.4rem;
+						}
+						h6 {
+							margin-top: 0;
+							margin-bottom: 0;
+							color: #ffdd99;
+							font-size: 1.8rem; 
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.form {
+		width: 100%;
+		// height: 820px;
+		background-color: #3C5499;
+		.wrapper_form {
+			max-width: 1140px;
+			width: 100%;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-top: 120px;
+			padding-bottom: 10%;
+			.section_form {
+				width: 80%;
+				margin-top: 60px;
+				form {
+					display: flex;
+					justify-content: space-around;
+					flex-flow: row wrap;
+					width: 100%;
+					.label {
+						position: relative;	
+					}
+					.form-control {
+						background-color: #273A71;
+						border: 0.001px solid black;
+						border-radius: 4px;
+						font-size: 1.8rem;
+						color: white;
+						&:focus,
+						&:valid {
+							outline: 0;
+							
+							+ label {
+								display: none;
+							}
+						}
+					}
+					label {
+						position: absolute;
+						left: 12px;
+						top: 14px;
+						color: white;
+						pointer-events: none;
+						font-size: 1.8rem;
+						span {
+							color: red;
+							font-weight: 700;
+						}
+					}
+					.input_name, .input_email {
+						width: 48%;
+						input {
+							width: 100%;
+							height: 58px;
+						}
+					}
+					.input_name {
+						margin-right: 4%;
+					}
+					.input_textarea {
+						width: 100%;
+						margin-top: 28px;
+						textarea {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
