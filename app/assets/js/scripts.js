@@ -8,10 +8,14 @@
  */
 (function ($, window, document, undefined) {
 
-  'use strict';
+	'use strict';
 
   $(function () {
-    // FastShell
+		// FastShell
+		// $('.menu-toggle').click(function() {
+		// 	$(this).toggleClass('active')
+		// 	$('.menu').slideToggle(300)
+		// })
   });
 
 })(jQuery, window, document);

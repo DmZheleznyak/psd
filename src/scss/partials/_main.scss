@@ -3,7 +3,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		background-color:  #87509C;
+		background-color:  $violet;
 		// wrapper in 'partials/wrapper.scss';
 			h1 {
 				font-family: 'Titillium Web';
@@ -21,7 +21,7 @@
 	}
 
 	.services {
-		background-color: #17C2A4;	
+		background-color: $green;
 		// wrapper in 'partials/wrapper.scss';
 		.columns_services {
 			width: 100%;
@@ -46,7 +46,7 @@
 	}
 
 	.team {
-		background-color: #E7F1F8;	
+		background-color: $grey;	
 		// wrapper in 'partials/wrapper.scss';
 		.columns_team {
 			width: 100%;
@@ -79,7 +79,7 @@
 						margin: 0 6px;
 						width: 3.2rem;
 						height: 3.2rem;
-						background-color: #BDD1DF;
+						background-color: $darkGrey;
 						border-radius: 50%;
 						i {
 							margin-top: 25%;
@@ -93,7 +93,7 @@
 	}
 
 	.skills {
-		background-color: #FFF;	
+		background-color: $white;	
 		// wrapper in 'partials/wrapper.scss';
 		.columns_skills {
 			width: 100%;
@@ -122,7 +122,7 @@
 	}
 
 	.portfolio {
-		background-color: #FFDD99;
+		background-color: $biege;
 		// wrapper in 'partials/wrapper.scss';
 		.nav {
 			ul {
@@ -177,7 +177,7 @@
 	}
 
 	.testimonials {
-		background-color: #D74680;
+		background-color: $pink;
 		// wrapper in 'partials/wrapper.scss';
 		.people_reviews {
 			width: 100%;
@@ -218,64 +218,12 @@
 
 	.form {
 		width: 100%;
-		background-color: #3C5499;
-		// wrapper in 'partials/wrapper.scss';
+		background-color: $blue;
+		// wrapper in 'partials/wrapper.scss'
 		.section_form {
 			width: 80%;
 			margin-top: 60px;
-			form {
-				display: flex;
-				justify-content: space-around;
-				flex-flow: row wrap;
-				width: 100%;
-				.label {
-					position: relative;	
-				}
-				.form-control {
-					background-color: #273A71;
-					border: 0.001px solid black;
-					border-radius: 4px;
-					font-size: 1.6rem;
-					color: white;
-					&:focus,
-					&:valid {
-						outline: 0;
-						
-						+ label {
-							display: none;
-						}
-					}
-				}
-				label {
-					position: absolute;
-					left: 12px;
-					top: 14px;
-					color: white;
-					pointer-events: none;
-					font-size: 1.8rem;
-					span {
-						color: red;
-						font-weight: 700;
-					}
-				}
-				.input_name, .input_email {
-					width: 48%;
-					input {
-						width: 100%;
-						height: 58px;
-					}
-				}
-				.input_name {
-					margin-right: 4%;
-				}
-				.input_textarea {
-					width: 100%;
-					margin-top: 28px;
-					textarea {
-						width: 100%;
-					}
-				}
-			}
+		// form in 'module/_form.scss'
 		}
 	}
 }

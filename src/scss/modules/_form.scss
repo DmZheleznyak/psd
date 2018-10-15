@@ -1,0 +1,53 @@
+form {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	width: 100%;
+	.label {
+		position: relative;	
+	}
+	.form-control {
+		background-color: #273A71;
+		border: 0.001px solid black;
+		border-radius: 4px;
+		font-size: 1.6rem;
+		color: white;
+		&:focus,
+		&:valid {
+			outline: 0;
+			
+			+ label {
+				display: none;
+			}
+		}
+	}
+	label {
+		position: absolute;
+		left: 12px;
+		top: 14px;
+		color: white;
+		pointer-events: none;
+		font-size: 1.8rem;
+		span {
+			color: red;
+			font-weight: 700;
+		}
+	}
+	.input_name, .input_email {
+		width: 48%;
+		input {
+			width: 100%;
+			height: 58px;
+		}
+	}
+	.input_name {
+		margin-right: 4%;
+	}
+	.input_textarea {
+		width: 100%;
+		margin-top: 28px;
+		textarea {
+			width: 100%;
+		}
+	}
+}

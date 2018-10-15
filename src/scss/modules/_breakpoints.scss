@@ -4,9 +4,8 @@
 @media only screen and (min-width:320px) {
 
 }
-@media only screen and (min-width:480px) {
-	
-}
+
+// ------------------------------------------------------
 
 @media only screen and (max-width:1024px) {
 	.header {
@@ -188,6 +187,7 @@
 
 }
 
+//-----------------------------------------------------------------
 
 @media only screen and (max-width:768px) {
 	.header {
@@ -411,6 +411,251 @@
 		}
 	}
 }
+
+@media only screen and (max-width:480px) {
+	
+	.header {
+		top: 20px;
+		.wrapper_header {
+			max-width: 960px;
+			.logo {
+				height: 23px;
+			}
+			.nav {
+				margin-right: 28px;
+				.menu-toggle {
+					display: inline-block;
+					border: none;
+					background-color: transparent;
+					padding: 0;
+					width: 40px;
+					cursor: pointer;
+					span {
+						display: block;
+						height: 3px;
+						background: $white;
+						+ span {
+							margin-top: 6px;
+						}
+					}
+				}
+				.menu {
+					display: none;
+				}
+			}
+		}
+	}
+	.main {
+		.headline {
+			h2 {
+				font-size: 2.6rem;
+			}
+			p {
+				font-size: 1.4rem;
+				margin-bottom: 0;
+			}
+		}
+		.baner {
+			.wrapper_baner {
+				@include indentsForSection(16%, 8%); //indentsForSection(padding-top, padding-bottom)
+				h1 {
+					font-size: 1.8rem;
+					line-height: 3rem;
+				}
+				.btn-orange {
+					width: 10rem;
+					height: 4rem;
+					font-size: 1rem;
+					padding-top: 12px;
+				}
+			}
+		}
+		.services {
+			.wrapper_services {
+				@include indentsForSection(6%, 6%);
+				.columns_services {
+					article {
+						margin-top: 18px;
+						img {
+							height: 90px;
+						}
+						h4 {
+							font-size: 1.8rem;
+						}
+						p {
+							font-size: 1.3rem;
+						}
+					}
+				}	
+			}
+		}
+		.team {
+			.wrapper_team {
+				@include indentsForSection(6%, 6%);
+				.columns_team {
+					article {
+						margin-top: 24px;
+						img {
+							height: 150px;
+						}
+						h4 {
+							font-size: 1.8rem;
+							margin-top: 4px;
+						}
+						h6 {
+							font-size: 1.3rem;
+							margin-bottom: 0px;
+						}
+						p {
+							font-size: 1.3rem;
+							line-height: 1.8rem;
+							margin-top: 8px;
+							margin-bottom: 8px;
+						}
+					}
+				}	
+			}
+		}
+		.skills {
+			.wrapper_skills {
+				@include indentsForSection(6%, 6%);
+				.columns_skills {
+					article {
+						margin-top: 24px;
+						.progress_bar {
+							img {
+								height: 100px;
+							}
+							p {
+								font-size: 3rem;
+								top: 27%;
+								left: 32%;
+								margin: 0;
+							}
+						}
+						h4 {
+							font-size: 1.6rem;
+							margin-top: 10px;
+							margin-bottom: 0px;
+						}
+					}
+				}	
+			}
+		}
+		.portfolio {
+			.wrapper_portfolio {
+				@include indentsForSection(6%, 6%);
+				.nav {
+					ul {
+						li {
+							width: 60px;
+							a {
+								font-size: 1.4rem;
+							}
+						}
+					}
+				}
+				.desktops {
+					flex-direction: column;
+					margin-top: 16px;
+					figure {
+						width: 100%;
+						img {
+							height: 275px;
+						}
+						figcaption {
+							margin-top: 12px;
+							font-size: 1.4rem;
+						}
+					}
+				}
+				.btn-green {
+					width: 18rem;
+					height: 6rem;
+					font-size: 1.4rem;
+					margin-top: 10px;
+					padding-top: 20px;
+				}
+			}
+		}
+		.testimonials {
+			.wrapper_testimonials {
+				@include indentsForSection(6%, 0);
+				.people_reviews {
+					margin-top: 20px;
+					article {
+						margin-bottom: 4%;
+						img {
+							height: 90px;
+						}
+						.review {
+							margin-left: 18px;
+							p {
+								font-size: 1.6rem;
+							}
+							h4 {
+								font-size: 1.8rem;
+								margin-top: 8px;
+							}
+							h6 {
+								font-size: 1.3rem;
+							}
+						}
+					}
+				}
+			}	
+		}
+		.form {
+			.wrapper_form {
+				@include indentsForSection(6%, 6%);
+				.section_form {
+					width: 75%;
+					margin-top: 40px;
+					form {
+						.input_name, .input_email, .input_textarea {
+							label {
+								font-size: 1.4rem;
+							}
+							input {
+								height: 48px;
+							}
+							.form-control {
+								font-size: 1.4rem;
+							}
+						}
+						.input_textarea {
+							margin-top: 22px;
+						}
+						.btn-blue {
+							width: 18rem;
+							height: 5.6rem;
+							font-size: 1.4rem;
+							margin-top: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		height: 86px;
+		.wrapper {
+			padding-top: 24px;
+			.nav {
+				ul {
+					li {
+						a {
+							font-size: 1.8rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
 @media only screen and (min-width:1140px) {
 
 }

@@ -10,22 +10,26 @@
 	text-align: center;
 	padding-top: 22px;
 	&-orange {
-		background-color: #EB7D4B;
+		background-color: $orangeBtn;
 		border-bottom: solid #C86A40;
 	}
 	&-green {
 		margin-top: 24px;
-		background-color: #17C2A4;
+		background-color: $greenBtn;
 		border-bottom: solid #14A58C;
 	}
 	&-blue { 
 		margin-top: 58px;
-		background-color: #30bae7;
+		background-color: $blueBtn;
     border: solid #30bae7;
     border-bottom: solid #299ec5;
 		padding-top: 0;
 		cursor: pointer;
 	}
+}
+
+.menu-toggle {
+	display: none;
 }
 
 // @mixin button($backgroundColorBtn, $colorBtn, $borderBottomBtn) {
