@@ -1,0 +1,33 @@
+@import '../mixins/indents';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1140px;
+	margin: 0 auto;
+	&_baner {
+		@include indents(19%, 13%);
+	}
+	&_services {
+		// padding-top: 120px;
+		// padding-bottom: 10%;
+		@include indents(120px, 10%);
+	}
+	&_team {
+		@include indents(120px, 10%);
+	}
+	&_skills {
+		@include indents(120px, 10%);
+	}
+	&_portfolio {
+		@include indents(120px, 10%);
+	}
+	&_testimonials {
+		@include indents(120px, 2%);
+	}
+	&_form {
+		width: 100%;
+		@include indents(120px, 10%);
+	}
+}

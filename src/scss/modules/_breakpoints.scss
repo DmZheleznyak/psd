@@ -1,16 +1,18 @@
+@import '../mixins/indents';
+// @import '../modules//vars';
+
 @media only screen and (min-width:320px) {
 
 }
 @media only screen and (min-width:480px) {
-
+	
 }
 
 @media only screen and (max-width:1024px) {
 	.main {
-		.banner {
+		.baner {
 			.wrapper_baner {
-				margin-bottom: 10%;
-				margin-top: 15%;
+				@include indents(12%, 12%); 
 				h1 {
 					font-size: 3.5rem;
 					margin-top: 0%;
@@ -20,26 +22,22 @@
 		}
 		.services {
 			.wrapper_services {
-				padding-top: 8%;
-				padding-bottom: 8%;
+				@include indents(8px, 8%);
 			}
 		}
 		.team {
 			.wrapper_team {
-				padding-top: 8%;
-				padding-bottom: 8%
+				@include indents(8%, 8%);
 			}
 		}
 		.skills {
 			.wrapper_skills {
-				padding-top: 8%;
-				padding-bottom: 8%
+				@include indents(8%, 8%);
 			}
 		}
 		.portfolio {
 			.wrapper_portfolio {
-				padding-top: 8%;
-				padding-bottom: 8%;
+				@include indents(8%, 8%);
 				.desktops {
 					flex-direction: column;
 					figure {
@@ -50,8 +48,7 @@
 		}
 		.testimonials {
 			.wrapper_testimonials {
-				padding-top: 8%;
-				padding-bottom: 0%;
+				@include indents(8, 0);
 				.people_reviews {
 					article {
 						margin-bottom: 8%;
@@ -61,8 +58,7 @@
 		}
 		.form {
 			.wrapper_form {
-				padding-top: 8%;
-				padding-bottom: 8%
+				@include indents(8%, 8%);
 			}
 		}
 	}
@@ -73,10 +69,10 @@
 		top: 6%;
 	}
 	.main {
-		.banner {
+		.baner {
 			.wrapper_baner {
-				margin-bottom: 10%;
-				margin-top: 15%;
+				margin-top: 4%;
+				margin-bottom: 4%;
 				h1 {
 					font-size: 2.6rem;
 				}
@@ -90,21 +86,36 @@
 		}
 		.services {
 			.wrapper_services {
-				padding-top: 4%;
-				padding-bottom: 4%;
+				@include indents(4%, 4%);
+				.headline {
+					h2 {
+						font-size: 2.6rem;
+					}
+					p {
+						font-size: 1.4rem;
+					}
+				}
 				.columns_services {
 					flex-wrap: wrap;
 					article {
 						width: 50%;
 						margin-top: 40px;
+						img {
+							height: 120px;
+						}
+						h4 {
+							font-size: 2.2rem;
+						}
+						p {
+							font-size: 1.4rem;
+						}
 					}
 				}
 			}
 		}
 		.team {
 			.wrapper_team {
-				padding-top: 4%;
-				padding-bottom: 4%;
+				@include indents(4%, 4%);
 				.columns_team {
 					flex-wrap: wrap;
 					article {
@@ -122,9 +133,8 @@
 			}
 		}
 		.skills {
-			.wrapper_skills {
-				padding-top: 4%;
-				padding-bottom: 4%;
+			.wrapper_skills {	
+				@include indents(4%, 4%);
 				.columns_skills {
 					flex-wrap: wrap;
 					article {
@@ -145,14 +155,12 @@
 		}
 		.portfolio {
 			.wrapper_portfolio {
-				padding-top: 4%;
-				padding-bottom: 4%;
+				@include indents(4%, 4%);
 			}
 		}
 		.testimonials {
 			.wrapper_testimonials {
-				padding-top: 4%;
-				padding-bottom: 0%;
+				@include indents(4%, 0%);
 				.people_reviews {
 					flex-direction: column;
 					article {
@@ -165,8 +173,7 @@
 		}
 		.form {
 			.wrapper_form {
-				padding-top: 4%;
-				padding-bottom: 4%
+				@include indents(4%, 4%);
 			}
 		}
 	}
