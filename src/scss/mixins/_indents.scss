@@ -1,4 +1,4 @@
-@mixin indents($padding-top, $padding-bottom) {
+@mixin indentsForSection($padding-top, $padding-bottom) {
 	padding-top: $padding-top;
 	padding-bottom: $padding-bottom;
 }

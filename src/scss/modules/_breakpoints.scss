@@ -9,171 +9,404 @@
 }
 
 @media only screen and (max-width:1024px) {
+	.header {
+		.wrapper_head {
+			max-width: 960px;
+		}
+	}
 	.main {
+		.headline {
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.6rem;
+				margin-bottom: 0;
+			}
+		}
 		.baner {
 			.wrapper_baner {
-				@include indents(12%, 12%); 
+				@include indentsForSection(18%, 10%); //indentsForSection(padding-top, padding-bottom)
 				h1 {
-					font-size: 3.5rem;
+					font-size: 3.2rem;
 					margin-top: 0%;
 					margin-bottom: 5%;
+				}
+				.btn-orange {
+					width: 26rem;
 				}
 			}
 		}
 		.services {
 			.wrapper_services {
-				@include indents(8px, 8%);
+				@include indentsForSection(8%, 8%);
+				.columns_services {
+					article {
+						margin-top: 30px;
+						img {
+							height: 100px;
+						}
+						h4 {
+							font-size: 1.8rem;
+							margin-top: 14px;
+							margin-bottom: 14px;
+						}
+						p {
+							font-size: 1.3rem;
+							margin-top: 10px;
+							margin-bottom: 10px;
+						}
+					}
+				}	
 			}
 		}
 		.team {
 			.wrapper_team {
-				@include indents(8%, 8%);
+				@include indentsForSection(8%, 8%);
+				.columns_team {
+					flex-wrap: wrap;
+					article {
+						margin-top: 25px;
+						width: 50%;
+						img {
+							height: 150px;
+						}
+						h4 {
+							font-size: 1.8rem;
+							margin-top: 10px;
+						}
+						h6 {
+							font-size: 1.3rem;
+							margin-bottom: 5px;
+						}
+						p {
+							font-size: 1.3rem;
+						}
+						.icons {
+							a {
+								width: 2.6rem;
+								height: 2.6rem;
+								i {
+									font-size: 1.4rem;
+								}
+							}
+						}
+					}
+				}	
 			}
 		}
 		.skills {
 			.wrapper_skills {
-				@include indents(8%, 8%);
+				@include indentsForSection(8%, 8%);
+				.columns_skills {
+					article {
+						margin-top: 25px;
+						.progress_bar {
+							img {
+								height: 120px;
+							}
+							p {
+								font-size: 3rem;
+								top: 7%;
+								left: 34%;
+							}
+						}
+						h4 {
+							font-size: 2rem;
+							margin-top: 10px;
+							margin-bottom: 4px;
+						}
+					}
+				}	
 			}
 		}
 		.portfolio {
 			.wrapper_portfolio {
-				@include indents(8%, 8%);
+				@include indentsForSection(8%, 8%);
 				.desktops {
 					flex-direction: column;
 					figure {
 						width: 100%;
+						img {
+							height: 300px;
+						}
+						figcaption {
+							margin-top: 20px;
+							font-size: 1.6rem;
+						}
 					}
+				}
+				.btn-green {
+					width: 26rem;
+					margin-top: 12px;
 				}
 			}
 		}
 		.testimonials {
 			.wrapper_testimonials {
-				@include indents(8, 0);
+				@include indentsForSection(8%, 0);
 				.people_reviews {
 					article {
 						margin-bottom: 8%;
+						.review {
+							p {
+								font-size: 1.8rem;
+							}
+							h4 {
+								font-size: 2.2rem;
+								margin-top: 20px;
+							}
+							h6 {
+								font-size: 1.5rem;
+							}
+						}
 					}
 				}
 			}	
 		}
 		.form {
 			.wrapper_form {
-				@include indents(8%, 8%);
+				@include indentsForSection(8%, 8%);
+			}
+		}
+	}
+	.footer {
+		height: 100px;
+		.wrapper {
+			padding-top: 26px;
+			.nav {
+				ul {
+					li {
+						a {
+							font-size: 2.2rem;
+						}
+					}
+				}
 			}
 		}
 	}
 
 }
+
+
 @media only screen and (max-width:768px) {
 	.header {
-		top: 6%;
+		top: 30px;
+		.wrapper_header {
+			max-width: 960px;
+			.logo {
+				height: 32px;
+			}
+			.nav {
+				margin-right: 28px;
+			}
+		}
 	}
 	.main {
+		.headline {
+			h2 {
+				font-size: 2.6rem;
+			}
+			p {
+				font-size: 1.4rem;
+				margin-bottom: 0;
+			}
+		}
 		.baner {
 			.wrapper_baner {
-				margin-top: 4%;
-				margin-bottom: 4%;
+				@include indentsForSection(16%, 8%); //indentsForSection(padding-top, padding-bottom)
 				h1 {
-					font-size: 2.6rem;
+					font-size: 2.8rem;
+					margin-top: 0%;
+					margin-bottom: 2%;
 				}
 				.btn-orange {
-					width: 33%;
-					height: 60px;
-					padding-top: 16px;
-					font-size: 1.6rem;
+					width: 18rem;
+					height: 6rem;
+					font-size: 1.4rem;
+					padding-top: 18px;
 				}
 			}
 		}
 		.services {
 			.wrapper_services {
-				@include indents(4%, 4%);
-				.headline {
-					h2 {
-						font-size: 2.6rem;
-					}
-					p {
-						font-size: 1.4rem;
-					}
-				}
+				@include indentsForSection(6%, 6%);
 				.columns_services {
-					flex-wrap: wrap;
 					article {
-						width: 50%;
-						margin-top: 40px;
+						margin-top: 18px;
 						img {
-							height: 120px;
+							height: 90px;
 						}
 						h4 {
-							font-size: 2.2rem;
+							font-size: 1.8rem;
 						}
 						p {
-							font-size: 1.4rem;
+							font-size: 1.3rem;
 						}
 					}
-				}
+				}	
 			}
 		}
 		.team {
 			.wrapper_team {
-				@include indents(4%, 4%);
+				@include indentsForSection(6%, 6%);
 				.columns_team {
-					flex-wrap: wrap;
 					article {
-						width: 50%;
-						margin-top: 40px;
+						margin-top: 24px;
+						img {
+							height: 150px;
+						}
+						h4 {
+							font-size: 1.8rem;
+							margin-top: 4px;
+						}
 						h6 {
-							margin-bottom: 10px;
+							font-size: 1.3rem;
+							margin-bottom: 0px;
 						}
 						p {
-							margin: 0;
-							margin-bottom: 10px;
+							font-size: 1.3rem;
+							line-height: 1.8rem;
+							margin-top: 8px;
+							margin-bottom: 8px;
 						}
 					}
-				}
+				}	
 			}
 		}
 		.skills {
-			.wrapper_skills {	
-				@include indents(4%, 4%);
+			.wrapper_skills {
+				@include indentsForSection(6%, 6%);
 				.columns_skills {
-					flex-wrap: wrap;
 					article {
-						width: 50%;
-						margin-top: 20px;
+						margin-top: 24px;
 						.progress_bar {
+							img {
+								height: 100px;
+							}
 							p {
-								left: 40%;
+								font-size: 3rem;
+								top: 27%;
+								left: 32%;
+								margin: 0;
 							}
 						}
 						h4 {
-							margin-top: 15px;
-							margin-bottom: 15px;
+							font-size: 1.6rem;
+							margin-top: 10px;
+							margin-bottom: 0px;
 						}
 					}
-				}
+				}	
 			}
 		}
 		.portfolio {
 			.wrapper_portfolio {
-				@include indents(4%, 4%);
+				@include indentsForSection(6%, 6%);
+				.nav {
+					ul {
+						li {
+							width: 60px;
+							a {
+								font-size: 1.4rem;
+							}
+						}
+					}
+				}
+				.desktops {
+					flex-direction: column;
+					margin-top: 16px;
+					figure {
+						width: 100%;
+						img {
+							height: 275px;
+						}
+						figcaption {
+							margin-top: 12px;
+							font-size: 1.4rem;
+						}
+					}
+				}
+				.btn-green {
+					width: 18rem;
+					height: 6rem;
+					font-size: 1.4rem;
+					margin-top: 10px;
+					padding-top: 20px;
+				}
 			}
 		}
 		.testimonials {
 			.wrapper_testimonials {
-				@include indents(4%, 0%);
+				@include indentsForSection(6%, 0);
 				.people_reviews {
-					flex-direction: column;
+					margin-top: 20px;
 					article {
-						width: 75%;
-						margin: 0 auto;
-						margin-bottom: 6%;
+						margin-bottom: 4%;
+						img {
+							height: 90px;
+						}
+						.review {
+							margin-left: 18px;
+							p {
+								font-size: 1.6rem;
+							}
+							h4 {
+								font-size: 1.8rem;
+								margin-top: 8px;
+							}
+							h6 {
+								font-size: 1.3rem;
+							}
+						}
 					}
 				}
 			}	
 		}
 		.form {
 			.wrapper_form {
-				@include indents(4%, 4%);
+				@include indentsForSection(6%, 6%);
+				.section_form {
+					width: 75%;
+					margin-top: 40px;
+					form {
+						.input_name, .input_email, .input_textarea {
+							label {
+								font-size: 1.4rem;
+							}
+							input {
+								height: 48px;
+							}
+							.form-control {
+								font-size: 1.4rem;
+							}
+						}
+						.input_textarea {
+							margin-top: 22px;
+						}
+						.btn-blue {
+							width: 18rem;
+							height: 5.6rem;
+							font-size: 1.4rem;
+							margin-top: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		height: 86px;
+		.wrapper {
+			padding-top: 24px;
+			.nav {
+				ul {
+					li {
+						a {
+							font-size: 1.8rem;
+						}
+					}
+				}
 			}
 		}
 	}
