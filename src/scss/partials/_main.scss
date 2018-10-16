@@ -78,10 +78,17 @@
 						height: 3.2rem;
 						background-color: $darkGrey;
 						border-radius: 50%;
+						&:hover {
+							background-color: darken($darkGrey, 25%)
+						}
 						i {
 							margin-top: 25%;
 							font-size: 1.6rem;
 							color: $white;
+							&:hover {
+								font-size: 1.8rem;
+								margin-top: 20%;
+							}
 						}
 					}
 				}
@@ -162,7 +169,8 @@
 				margin: 0;
 				margin-bottom: 60px;
 				img {
-					height: 310px;
+					max-width: 100%;
+					height: auto;
 				}
 				figcaption {
 					margin-top: 22px;

@@ -66,7 +66,6 @@ html {
   font-size: 10px; }
 
 body {
-  max-width: 1440px;
   font-family: 'Titillium Web', sans-serif; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -605,10 +604,15 @@ textarea {
           height: 3.2rem;
           background-color: #BDD1DF;
           border-radius: 50%; }
+          .main .team .columns_team article .icons a:hover {
+            background-color: #6795b5; }
           .main .team .columns_team article .icons a i {
             margin-top: 25%;
             font-size: 1.6rem;
             color: #fff; }
+            .main .team .columns_team article .icons a i:hover {
+              font-size: 1.8rem;
+              margin-top: 20%; }
 
 .main .skills {
   background-color: #fff; }
@@ -675,7 +679,8 @@ textarea {
       margin: 0;
       margin-bottom: 60px; }
       .main .portfolio .desktops figure img {
-        height: 310px; }
+        max-width: 100%;
+        height: auto; }
       .main .portfolio .desktops figure figcaption {
         margin-top: 22px;
         font-size: 1.8rem;
@@ -808,8 +813,9 @@ form {
     background-color: #273A71;
     border: 0.001px solid black;
     border-radius: 4px;
-    font-size: 1.6rem;
-    color: white; }
+    font-size: 1.8rem;
+    color: white;
+    padding-left: 12px; }
     form .form-control:focus, form .form-control:valid {
       outline: 0; }
       form .form-control:focus + label, form .form-control:valid + label {
@@ -837,7 +843,8 @@ form {
     width: 100%;
     margin-top: 28px; }
     form .textarea textarea {
-      width: 100%; }
+      width: 100%;
+      padding-top: 14px; }
 
 .btn {
   display: inline-block;
@@ -854,10 +861,14 @@ form {
   .btn-orange {
     background-color: #EB7D4B;
     border-bottom: solid #C86A40; }
+    .btn-orange:hover {
+      background-color: #ee8e62; }
   .btn-green {
     margin-top: 24px;
     background-color: #17C2A4;
     border-bottom: solid #14A58C; }
+    .btn-green:hover {
+      background-color: #1ad9b7; }
   .btn-blue {
     margin-top: 58px;
     background-color: #30bae7;
@@ -865,6 +876,8 @@ form {
     border-bottom: solid #299ec5;
     padding-top: 0;
     cursor: pointer; }
+    .btn-blue:hover {
+      background-color: #50c5eb; }
 
 .menu-toggle {
   display: none; }
@@ -896,7 +909,7 @@ form {
   color: #fff;
   text-shadow: none; }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
   .header .wrapper_head {
     max-width: 960px; }
   .main .headline h2 {
@@ -975,8 +988,6 @@ form {
           flex-direction: column; }
       .main .portfolio .wrapper_portfolio .desktops figure {
         width: 100%; }
-        .main .portfolio .wrapper_portfolio .desktops figure img {
-          height: 300px; }
         .main .portfolio .wrapper_portfolio .desktops figure figcaption {
           margin-top: 20px;
           font-size: 1.6rem; }
@@ -1005,7 +1016,7 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 2.2rem; } }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   .header {
     top: 30px; }
     .header .wrapper_header {
@@ -1104,8 +1115,6 @@ form {
       margin-top: 16px; }
       .main .portfolio .wrapper_portfolio .desktops figure {
         width: 100%; }
-        .main .portfolio .wrapper_portfolio .desktops figure img {
-          height: 275px; }
         .main .portfolio .wrapper_portfolio .desktops figure figcaption {
           margin-top: 12px;
           font-size: 1.4rem; }
@@ -1159,7 +1168,7 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 1.8rem; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
   .header {
     top: 18px; }
     .header .wrapper_header {
@@ -1172,6 +1181,10 @@ form {
   .main .headline p {
     font-size: 1.2rem;
     margin-bottom: 0; }
+    .main .headline p.headline_team {
+      margin: 0 20%; }
+    .main .headline p.headline_skills {
+      margin: 0 18%; }
   .main .baner {
     height: 370px; }
     .main .baner .wrapper_baner {
@@ -1194,11 +1207,12 @@ form {
           flex-wrap: wrap; }
       .main .services .wrapper_services .columns_services article {
         width: 50%;
-        margin-top: 18px; }
+        margin-top: 28px; }
         .main .services .wrapper_services .columns_services article img {
           height: 90px; }
         .main .services .wrapper_services .columns_services article h4 {
-          font-size: 1.6rem; }
+          font-size: 1.6rem;
+          margin: 6px 0; }
         .main .services .wrapper_services .columns_services article p {
           font-size: 1.2rem; }
   .main .team .wrapper_team {
@@ -1325,6 +1339,43 @@ form {
       padding-top: 18px; }
       .footer .wrapper .nav ul li a {
         font-size: 1.4rem; } }
+
+@media only screen and (max-width: 376px) {
+  .main .headline p.headline_services {
+    margin: 0 18%; }
+  .main .headline p.headline_team {
+    margin: 0 18%; }
+  .main .headline p.headline_skills {
+    margin: 0 18%; }
+  .main .headline p.headline_form {
+    margin: 0 16%; }
+  .main .wrapper_baner h1 {
+    width: 80%; }
+  .main .services .wrapper_services .columns_services article h4 {
+    font-size: 1.4rem; }
+  .main .services .wrapper_services .columns_services article p {
+    font-size: 1.1rem; }
+  .main .team .wrapper_team .columns_team article h4 {
+    font-size: 1.4rem; }
+  .main .team .wrapper_team .columns_team article h6, .main .team .wrapper_team .columns_team article p {
+    font-size: 1.1rem; }
+  .main .portfolio .desktops img {
+    height: 175px; }
+  .main .testimonials .wrapper_testimonials .people_reviews article .review p {
+    font-size: 1.3rem; }
+  .main .testimonials .wrapper_testimonials .people_reviews article .review h4 {
+    font-size: 1.4rem; }
+  .main .testimonials .wrapper_testimonials .people_reviews article .review h6 {
+    font-size: 1.1rem; }
+  .footer {
+    height: 90px; }
+    .footer .wrapper {
+      padding-top: 6px; }
+      .footer .wrapper nav ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .footer .wrapper nav ul li {
+          width: 33%; } }
 
 @media print {
   * {

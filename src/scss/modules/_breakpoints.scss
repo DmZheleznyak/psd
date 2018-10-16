@@ -1,13 +1,8 @@
 @import '../mixins/indents';
-// @import '../modules//vars';
-
-@media only screen and (min-width:320px) {
-
-}
 
 // ------------------------------------------------------
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1025px) {
 	.header {
 		.wrapper_head {
 			max-width: 960px;
@@ -126,9 +121,6 @@
 					flex-direction: column;
 					figure {
 						width: 100%;
-						img {
-							height: 300px;
-						}
 						figcaption {
 							margin-top: 20px;
 							font-size: 1.6rem;
@@ -189,7 +181,7 @@
 
 //-----------------------------------------------------------------
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:769px) {
 	.header {
 		top: 30px;
 		.wrapper_header {
@@ -337,9 +329,6 @@
 					margin-top: 16px;
 					figure {
 						width: 100%;
-						img {
-							height: 275px;
-						}
 						figcaption {
 							margin-top: 12px;
 							font-size: 1.4rem;
@@ -433,7 +422,7 @@
 
 // ---------------------------------------------------
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:481px) {
 	
 	.header {
 		top: 18px;
@@ -453,6 +442,12 @@
 			p {
 				font-size: 1.2rem;
 				margin-bottom: 0;
+				&.headline_team {
+					margin: 0 20%;
+				}
+				&.headline_skills {
+					margin: 0 18%;
+				} 
 			}
 		}
 		.baner {
@@ -479,12 +474,13 @@
 					flex-wrap: wrap;
 					article {
 						width: 50%;
-						margin-top: 18px;
+						margin-top: 28px;
 						img {
 							height: 90px;
 						}
 						h4 {
 							font-size: 1.6rem;
+							margin: 6px 0;
 						}
 						p {
 							font-size: 1.2rem;
@@ -688,6 +684,114 @@
 
 }
 
+// ------------------------------------------------------------------
+
+
+@media only screen and (max-width:376px) {
+
+	.main {
+		.headline {
+			p {
+				&.headline_services {
+					margin: 0 18%;
+				}
+				&.headline_team {
+					margin: 0 18%;
+				}
+				&.headline_skills {
+					margin: 0 18%;
+				}
+				&.headline_form {
+					// white-space: normal;
+					margin: 0 16%;
+				}
+			} 
+		}
+		.wrapper_baner {
+			h1 {
+				width: 80%;
+			}
+		}
+		.services {
+			.wrapper_services {
+				.columns_services {
+					article {
+						h4 {
+							font-size: 1.4rem;
+						}
+						p {
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+			
+		}
+		.team {
+			.wrapper_team {
+				.columns_team {
+					article {
+						h4 {
+							font-size: 1.4rem;
+						}
+						h6, p {
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+			
+		}
+		.portfolio {
+			.desktops {
+				img {
+					height: 175px;
+				}
+			}
+		}
+		.testimonials {
+			.wrapper_testimonials {
+				.people_reviews {
+					article {
+						.review {
+							p {
+								font-size: 1.3rem;
+							}
+							h4 {
+								font-size: 1.4rem;
+							}
+							h6 {
+								font-size: 1.1rem;
+							}
+		
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.footer {
+		height: 90px;
+		.wrapper {
+			padding-top: 6px;
+			nav {
+				ul {
+					flex-wrap: wrap;
+					li {
+						width: 33%;
+					}
+				}
+			}
+		}
+	}
+
+
+
+}	
+
+
+// --------------------------------------------------------------------
 
 @media only screen and (min-width:1140px) {
 

@@ -12,11 +12,17 @@
 	&-orange {
 		background-color: $orangeBtn;
 		border-bottom: solid #C86A40;
+		&:hover {
+			background-color: lighten($orangeBtn, 5%);
+		}
 	}
 	&-green {
 		margin-top: 24px;
 		background-color: $greenBtn;
 		border-bottom: solid #14A58C;
+		&:hover {
+			background-color: lighten($greenBtn, 5%);
+		}
 	}
 	&-blue { 
 		margin-top: 58px;
@@ -25,6 +31,9 @@
     border-bottom: solid #299ec5;
 		padding-top: 0;
 		cursor: pointer;
+		&:hover {
+			background-color: lighten($blueBtn, 7%);
+		}
 	}
 }
 
