@@ -814,6 +814,8 @@ form {
       outline: 0; }
       form .form-control:focus + label, form .form-control:valid + label {
         display: none; }
+    form .form-control:invalid {
+      box-shadow: none; }
   form label {
     position: absolute;
     left: 12px;
@@ -831,10 +833,10 @@ form {
       height: 58px; }
   form .input_name {
     margin-right: 4%; }
-  form .input_textarea {
+  form .textarea {
     width: 100%;
     margin-top: 28px; }
-    form .input_textarea textarea {
+    form .textarea textarea {
       width: 100%; }
 
 .btn {
@@ -1012,6 +1014,21 @@ form {
         height: 32px; }
       .header .wrapper_header .nav {
         margin-right: 28px; }
+        .header .wrapper_header .nav .menu-toggle {
+          display: inline-block;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+          width: 40px;
+          cursor: pointer; }
+          .header .wrapper_header .nav .menu-toggle span {
+            display: block;
+            height: 3px;
+            background: #fff; }
+            .header .wrapper_header .nav .menu-toggle span + span {
+              margin-top: 6px; }
+        .header .wrapper_header .nav .menu {
+          display: none; }
   .main .headline h2 {
     font-size: 2.6rem; }
   .main .headline p {
@@ -1122,13 +1139,13 @@ form {
     .main .form .wrapper_form .section_form {
       width: 75%;
       margin-top: 40px; }
-      .main .form .wrapper_form .section_form form .input_name label, .main .form .wrapper_form .section_form form .input_email label, .main .form .wrapper_form .section_form form .input_textarea label {
+      .main .form .wrapper_form .section_form form .input_name label, .main .form .wrapper_form .section_form form .input_email label, .main .form .wrapper_form .section_form form .textarea label {
         font-size: 1.4rem; }
-      .main .form .wrapper_form .section_form form .input_name input, .main .form .wrapper_form .section_form form .input_email input, .main .form .wrapper_form .section_form form .input_textarea input {
+      .main .form .wrapper_form .section_form form .input_name input, .main .form .wrapper_form .section_form form .input_email input, .main .form .wrapper_form .section_form form .textarea input {
         height: 48px; }
-      .main .form .wrapper_form .section_form form .input_name .form-control, .main .form .wrapper_form .section_form form .input_email .form-control, .main .form .wrapper_form .section_form form .input_textarea .form-control {
+      .main .form .wrapper_form .section_form form .input_name .form-control, .main .form .wrapper_form .section_form form .input_email .form-control, .main .form .wrapper_form .section_form form .textarea .form-control {
         font-size: 1.4rem; }
-      .main .form .wrapper_form .section_form form .input_textarea {
+      .main .form .wrapper_form .section_form form .textarea {
         margin-top: 22px; }
       .main .form .wrapper_form .section_form form .btn-blue {
         width: 18rem;
@@ -1144,92 +1161,92 @@ form {
 
 @media only screen and (max-width: 480px) {
   .header {
-    top: 20px; }
+    top: 18px; }
     .header .wrapper_header {
       max-width: 960px; }
       .header .wrapper_header .logo {
-        height: 23px; }
-      .header .wrapper_header .nav {
-        margin-right: 28px; }
-        .header .wrapper_header .nav .menu-toggle {
-          display: inline-block;
-          border: none;
-          background-color: transparent;
-          padding: 0;
-          width: 40px;
-          cursor: pointer; }
-          .header .wrapper_header .nav .menu-toggle span {
-            display: block;
-            height: 3px;
-            background: #fff; }
-            .header .wrapper_header .nav .menu-toggle span + span {
-              margin-top: 6px; }
-        .header .wrapper_header .nav .menu {
-          display: none; }
+        height: 22px;
+        margin-left: 2.8rem; }
   .main .headline h2 {
-    font-size: 2.6rem; }
+    font-size: 2rem; }
   .main .headline p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 0; }
-  .main .baner .wrapper_baner {
-    padding-top: 16%;
-    padding-bottom: 8%; }
-    .main .baner .wrapper_baner h1 {
-      font-size: 1.8rem;
-      line-height: 3rem; }
-    .main .baner .wrapper_baner .btn-orange {
-      width: 10rem;
-      height: 4rem;
-      font-size: 1rem;
-      padding-top: 12px; }
+  .main .baner {
+    height: 370px; }
+    .main .baner .wrapper_baner {
+      padding-top: 16%;
+      padding-bottom: 0; }
+      .main .baner .wrapper_baner h1 {
+        font-size: 1.8rem;
+        line-height: 2.8rem; }
+      .main .baner .wrapper_baner .btn-orange {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.2rem;
+        padding-top: 9px;
+        margin-top: 8%; }
   .main .services .wrapper_services {
-    padding-top: 6%;
-    padding-bottom: 6%; }
-    .main .services .wrapper_services .columns_services article {
-      margin-top: 18px; }
-      .main .services .wrapper_services .columns_services article img {
-        height: 90px; }
-      .main .services .wrapper_services .columns_services article h4 {
-        font-size: 1.8rem; }
-      .main .services .wrapper_services .columns_services article p {
-        font-size: 1.3rem; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
+    .main .services .wrapper_services .columns_services {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .main .services .wrapper_services .columns_services article {
+        width: 50%;
+        margin-top: 18px; }
+        .main .services .wrapper_services .columns_services article img {
+          height: 90px; }
+        .main .services .wrapper_services .columns_services article h4 {
+          font-size: 1.6rem; }
+        .main .services .wrapper_services .columns_services article p {
+          font-size: 1.2rem; }
   .main .team .wrapper_team {
-    padding-top: 6%;
-    padding-bottom: 6%; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
     .main .team .wrapper_team .columns_team article {
       margin-top: 24px; }
       .main .team .wrapper_team .columns_team article img {
-        height: 150px; }
+        height: 125px; }
       .main .team .wrapper_team .columns_team article h4 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-top: 4px; }
       .main .team .wrapper_team .columns_team article h6 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         margin-bottom: 0px; }
       .main .team .wrapper_team .columns_team article p {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-        margin-top: 8px;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-top: 6px;
         margin-bottom: 8px; }
+      .main .team .wrapper_team .columns_team article .icons a {
+        width: 2.4rem;
+        height: 2.4rem; }
+        .main .team .wrapper_team .columns_team article .icons a i {
+          font-size: 1.3rem; }
   .main .skills .wrapper_skills {
-    padding-top: 6%;
-    padding-bottom: 6%; }
-    .main .skills .wrapper_skills .columns_skills article {
-      margin-top: 24px; }
-      .main .skills .wrapper_skills .columns_skills article .progress_bar img {
-        height: 100px; }
-      .main .skills .wrapper_skills .columns_skills article .progress_bar p {
-        font-size: 3rem;
-        top: 27%;
-        left: 32%;
-        margin: 0; }
-      .main .skills .wrapper_skills .columns_skills article h4 {
-        font-size: 1.6rem;
-        margin-top: 10px;
-        margin-bottom: 0px; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
+    .main .skills .wrapper_skills .columns_skills {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .main .skills .wrapper_skills .columns_skills article {
+        width: 50%;
+        margin-top: 24px; }
+        .main .skills .wrapper_skills .columns_skills article .progress_bar img {
+          height: 100px; }
+        .main .skills .wrapper_skills .columns_skills article .progress_bar p {
+          font-size: 2.8r;
+          top: 26%;
+          left: 40%;
+          margin: 0; }
+        .main .skills .wrapper_skills .columns_skills article h4 {
+          font-size: 1.6rem;
+          margin-top: 10px;
+          margin-bottom: 0px; }
   .main .portfolio .wrapper_portfolio {
-    padding-top: 6%;
-    padding-bottom: 6%; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
     .main .portfolio .wrapper_portfolio .nav ul li {
       width: 60px; }
       .main .portfolio .wrapper_portfolio .nav ul li a {
@@ -1239,61 +1256,75 @@ form {
           flex-direction: column;
       margin-top: 16px; }
       .main .portfolio .wrapper_portfolio .desktops figure {
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 30px; }
         .main .portfolio .wrapper_portfolio .desktops figure img {
-          height: 275px; }
+          height: 200px; }
         .main .portfolio .wrapper_portfolio .desktops figure figcaption {
-          margin-top: 12px;
-          font-size: 1.4rem; }
+          margin-top: 6px;
+          font-size: 1.2rem; }
     .main .portfolio .wrapper_portfolio .btn-green {
-      width: 18rem;
-      height: 6rem;
-      font-size: 1.4rem;
-      margin-top: 10px;
-      padding-top: 20px; }
+      width: 14rem;
+      height: 4rem;
+      font-size: 1.2rem;
+      padding-top: 11px; }
   .main .testimonials .wrapper_testimonials {
-    padding-top: 6%;
-    padding-bottom: 0; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
     .main .testimonials .wrapper_testimonials .people_reviews {
+      -ms-flex-direction: column;
+          flex-direction: column;
       margin-top: 20px; }
       .main .testimonials .wrapper_testimonials .people_reviews article {
-        margin-bottom: 4%; }
+        margin-bottom: 4%;
+        width: 95%;
+        margin: 10px auto; }
         .main .testimonials .wrapper_testimonials .people_reviews article img {
-          height: 90px; }
+          height: 90px;
+          margin-left: 5%; }
         .main .testimonials .wrapper_testimonials .people_reviews article .review {
           margin-left: 18px; }
           .main .testimonials .wrapper_testimonials .people_reviews article .review p {
-            font-size: 1.6rem; }
+            font-size: 1.4rem; }
           .main .testimonials .wrapper_testimonials .people_reviews article .review h4 {
-            font-size: 1.8rem;
-            margin-top: 8px; }
+            font-size: 1.6rem;
+            margin-top: 6px; }
           .main .testimonials .wrapper_testimonials .people_reviews article .review h6 {
-            font-size: 1.3rem; }
+            font-size: 1.2rem; }
   .main .form .wrapper_form {
-    padding-top: 6%;
-    padding-bottom: 6%; }
+    padding-top: 4%;
+    padding-bottom: 4%; }
+    .main .form .wrapper_form .headline p.headline_form {
+      white-space: pre-line; }
     .main .form .wrapper_form .section_form {
       width: 75%;
-      margin-top: 40px; }
-      .main .form .wrapper_form .section_form form .input_name label, .main .form .wrapper_form .section_form form .input_email label, .main .form .wrapper_form .section_form form .input_textarea label {
+      margin-top: 30px; }
+      .main .form .wrapper_form .section_form form .input_name label, .main .form .wrapper_form .section_form form .input_email label, .main .form .wrapper_form .section_form form .textarea label {
         font-size: 1.4rem; }
-      .main .form .wrapper_form .section_form form .input_name input, .main .form .wrapper_form .section_form form .input_email input, .main .form .wrapper_form .section_form form .input_textarea input {
+      .main .form .wrapper_form .section_form form .input_name input, .main .form .wrapper_form .section_form form .input_email input, .main .form .wrapper_form .section_form form .textarea input {
         height: 48px; }
-      .main .form .wrapper_form .section_form form .input_name .form-control, .main .form .wrapper_form .section_form form .input_email .form-control, .main .form .wrapper_form .section_form form .input_textarea .form-control {
+      .main .form .wrapper_form .section_form form .input_name .form-control, .main .form .wrapper_form .section_form form .input_email .form-control, .main .form .wrapper_form .section_form form .textarea .form-control {
         font-size: 1.4rem; }
-      .main .form .wrapper_form .section_form form .input_textarea {
-        margin-top: 22px; }
+      .main .form .wrapper_form .section_form form .input_name {
+        width: 100%;
+        margin-right: 0; }
+      .main .form .wrapper_form .section_form form .input_email {
+        width: 100%;
+        margin-top: 20px; }
+      .main .form .wrapper_form .section_form form .textarea {
+        margin-top: 20px; }
       .main .form .wrapper_form .section_form form .btn-blue {
-        width: 18rem;
-        height: 5.6rem;
-        font-size: 1.4rem;
-        margin-top: 36px; }
+        width: 14rem;
+        height: 4rem;
+        font-size: 1.2rem;
+        margin-top: 28px;
+        padding-top: 0; }
   .footer {
-    height: 86px; }
+    height: 70px; }
     .footer .wrapper {
-      padding-top: 24px; }
+      padding-top: 18px; }
       .footer .wrapper .nav ul li a {
-        font-size: 1.8rem; } }
+        font-size: 1.4rem; } }
 
 @media print {
   * {

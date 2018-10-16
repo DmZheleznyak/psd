@@ -20,6 +20,9 @@ form {
 				display: none;
 			}
 		}
+		&:invalid {
+			box-shadow: none;
+		}
 	}
 	label {
 		position: absolute;
@@ -43,7 +46,7 @@ form {
 	.input_name {
 		margin-right: 4%;
 	}
-	.input_textarea {
+	.textarea {
 		width: 100%;
 		margin-top: 28px;
 		textarea {

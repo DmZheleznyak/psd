@@ -5,19 +5,16 @@
 		align-items: center;
 		background-color:  $violet;
 		// wrapper in 'partials/wrapper.scss';
-			h1 {
-				font-family: 'Titillium Web';
-				font-weight: bold;
-				font-size: 4.1rem;
-				line-height: 4.8rem;
-				text-align: center;
-				color: $white;
-				margin-top: -5%;
-				margin-bottom: 10%;
-			}
-			// .btn {
-			// 	@include button(#EB7D4B, #fff, #C86A40)
-			// }		
+		h1 {
+			font-family: 'Titillium Web';
+			font-weight: bold;
+			font-size: 4.1rem;
+			line-height: 4.8rem;
+			text-align: center;
+			color: $white;
+			margin-top: -5%;
+			margin-bottom: 10%;
+		}		
 	}
 
 	.services {

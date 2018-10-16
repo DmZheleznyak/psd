@@ -199,6 +199,25 @@
 			}
 			.nav {
 				margin-right: 28px;
+				.menu-toggle {
+					display: inline-block;
+					border: none;
+					background-color: transparent;
+					padding: 0;
+					width: 40px;
+					cursor: pointer;
+					span {
+						display: block;
+						height: 3px;
+						background: $white;
+						+ span {
+							margin-top: 6px;
+						}
+					}
+				}
+				.menu {
+					display: none;
+				}
 			}
 		}
 	}
@@ -370,7 +389,7 @@
 					width: 75%;
 					margin-top: 40px;
 					form {
-						.input_name, .input_email, .input_textarea {
+						.input_name, .input_email, .textarea {
 							label {
 								font-size: 1.4rem;
 							}
@@ -381,7 +400,7 @@
 								font-size: 1.4rem;
 							}
 						}
-						.input_textarea {
+						.textarea {
 							margin-top: 22px;
 						}
 						.btn-blue {
@@ -412,78 +431,63 @@
 	}
 }
 
+// ---------------------------------------------------
+
 @media only screen and (max-width:480px) {
 	
 	.header {
-		top: 20px;
+		top: 18px;
 		.wrapper_header {
 			max-width: 960px;
 			.logo {
-				height: 23px;
-			}
-			.nav {
-				margin-right: 28px;
-				.menu-toggle {
-					display: inline-block;
-					border: none;
-					background-color: transparent;
-					padding: 0;
-					width: 40px;
-					cursor: pointer;
-					span {
-						display: block;
-						height: 3px;
-						background: $white;
-						+ span {
-							margin-top: 6px;
-						}
-					}
-				}
-				.menu {
-					display: none;
-				}
+				height: 22px;
+				margin-left: 2.8rem;
 			}
 		}
 	}
 	.main {
 		.headline {
 			h2 {
-				font-size: 2.6rem;
+				font-size: 2rem;
 			}
 			p {
-				font-size: 1.4rem;
+				font-size: 1.2rem;
 				margin-bottom: 0;
 			}
 		}
 		.baner {
+			height: 370px;
 			.wrapper_baner {
-				@include indentsForSection(16%, 8%); //indentsForSection(padding-top, padding-bottom)
+				@include indentsForSection(16%, 0); //indentsForSection(padding-top, padding-bottom)
 				h1 {
 					font-size: 1.8rem;
-					line-height: 3rem;
+					line-height: 2.8rem;
 				}
 				.btn-orange {
-					width: 10rem;
+					width: 12rem;
 					height: 4rem;
-					font-size: 1rem;
-					padding-top: 12px;
+					font-size: 1.2rem;
+					padding-top: 9px;
+					margin-top: 8%;
 				}
 			}
 		}
 		.services {
 			.wrapper_services {
-				@include indentsForSection(6%, 6%);
+				@include indentsForSection(4%, 4%);
 				.columns_services {
+					flex-wrap: wrap;
 					article {
+						width: 50%;
 						margin-top: 18px;
 						img {
 							height: 90px;
 						}
 						h4 {
-							font-size: 1.8rem;
+							font-size: 1.6rem;
 						}
 						p {
-							font-size: 1.3rem;
+							font-size: 1.2rem;
 						}
 					}
 				}	
@@ -491,26 +495,35 @@
 		}
 		.team {
 			.wrapper_team {
-				@include indentsForSection(6%, 6%);
+				@include indentsForSection(4%, 4%);
 				.columns_team {
 					article {
 						margin-top: 24px;
 						img {
-							height: 150px;
+							height: 125px;
 						}
 						h4 {
-							font-size: 1.8rem;
+							font-size: 1.6rem;
 							margin-top: 4px;
 						}
 						h6 {
-							font-size: 1.3rem;
+							font-size: 1.2rem;
 							margin-bottom: 0px;
 						}
 						p {
-							font-size: 1.3rem;
-							line-height: 1.8rem;
-							margin-top: 8px;
+							font-size: 1.2rem;
+							line-height: 1.6rem;
+							margin-top: 6px;
 							margin-bottom: 8px;
+						}
+						.icons {
+							a {
+								width: 2.4rem;
+								height: 2.4rem;
+								i {
+									font-size: 1.3rem;
+								}
+							}
 						}
 					}
 				}	
@@ -518,18 +531,20 @@
 		}
 		.skills {
 			.wrapper_skills {
-				@include indentsForSection(6%, 6%);
+				@include indentsForSection(4%, 4%);
 				.columns_skills {
+					flex-wrap: wrap;
 					article {
+						width: 50%;
 						margin-top: 24px;
 						.progress_bar {
 							img {
 								height: 100px;
 							}
 							p {
-								font-size: 3rem;
-								top: 27%;
-								left: 32%;
+								font-size: 2.8r;
+								top: 26%;
+								left: 40%;
 								margin: 0;
 							}
 						}
@@ -544,7 +559,7 @@
 		}
 		.portfolio {
 			.wrapper_portfolio {
-				@include indentsForSection(6%, 6%);
+				@include indentsForSection(4%, 4%);
 				.nav {
 					ul {
 						li {
@@ -560,45 +575,49 @@
 					margin-top: 16px;
 					figure {
 						width: 100%;
+						margin-bottom: 30px;
 						img {
-							height: 275px;
+							height: 200px;
 						}
 						figcaption {
-							margin-top: 12px;
-							font-size: 1.4rem;
+							margin-top: 6px;
+							font-size: 1.2rem;
 						}
 					}
 				}
 				.btn-green {
-					width: 18rem;
-					height: 6rem;
-					font-size: 1.4rem;
-					margin-top: 10px;
-					padding-top: 20px;
+					width: 14rem;
+					height: 4rem;
+					font-size: 1.2rem;
+					padding-top: 11px;
 				}
 			}
 		}
 		.testimonials {
 			.wrapper_testimonials {
-				@include indentsForSection(6%, 0);
+				@include indentsForSection(4%, 4%);
 				.people_reviews {
+					flex-direction: column;
 					margin-top: 20px;
 					article {
 						margin-bottom: 4%;
+						width: 95%;
+						margin: 10px auto;
 						img {
 							height: 90px;
+							margin-left: 5%;
 						}
 						.review {
 							margin-left: 18px;
 							p {
-								font-size: 1.6rem;
+								font-size: 1.4rem;
 							}
 							h4 {
-								font-size: 1.8rem;
-								margin-top: 8px;
+								font-size: 1.6rem;
+								margin-top: 6px;
 							}
 							h6 {
-								font-size: 1.3rem;
+								font-size: 1.2rem;
 							}
 						}
 					}
@@ -607,12 +626,17 @@
 		}
 		.form {
 			.wrapper_form {
-				@include indentsForSection(6%, 6%);
+				@include indentsForSection(4%, 4%);
+				.headline {
+					p.headline_form {
+						white-space: pre-line;
+					}
+				}
 				.section_form {
 					width: 75%;
-					margin-top: 40px;
+					margin-top: 30px;
 					form {
-						.input_name, .input_email, .input_textarea {
+						.input_name, .input_email, .textarea {
 							label {
 								font-size: 1.4rem;
 							}
@@ -623,14 +647,23 @@
 								font-size: 1.4rem;
 							}
 						}
-						.input_textarea {
-							margin-top: 22px;
+						.input_name {
+							width: 100%;
+							margin-right: 0;
+						}
+						.input_email {
+							width: 100%;
+							margin-top: 20px;
+						}
+						.textarea {
+							margin-top: 20px;
 						}
 						.btn-blue {
-							width: 18rem;
-							height: 5.6rem;
-							font-size: 1.4rem;
-							margin-top: 36px;
+							width: 14rem;
+							height: 4rem;
+							font-size: 1.2rem;
+							margin-top: 28px;
+							padding-top: 0;
 						}
 					}
 				}
@@ -638,14 +671,14 @@
 		}
 	}
 	.footer {
-		height: 86px;
+		height: 70px;
 		.wrapper {
-			padding-top: 24px;
+			padding-top: 18px;
 			.nav {
 				ul {
 					li {
 						a {
-							font-size: 1.8rem;
+							font-size: 1.4rem;
 						}
 					}
 				}
