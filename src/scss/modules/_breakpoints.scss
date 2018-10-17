@@ -2,6 +2,21 @@
 
 // ------------------------------------------------------
 
+
+@media screen and (min-width: 771px) {
+	.header {
+		.wrapper_header {
+			.nav {
+				.menu {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+// -----------------------------------------------------------------
+
 // @media only screen and (max-width:1025px) {
 @media screen and (max-width:1028px) {
 
@@ -183,20 +198,30 @@
 
 // ----------------------------------------------------------------
 
-@media screen and (min-width: 771px) {
+@media screen and (max-width: 905px) {
 	.header {
-		.wrapper_header {
-			.nav {
-				.menu {
-					display: flex;
+		top: 40px;
+	}
+	.main {
+		.testimonials {
+			.wrapper_testimonials {
+				.people_reviews {
+					article {
+						width: 51%;
+						.review {
+							margin-left: 30px;
+							h4 {
+								margin-top: 12px;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-// -----------------------------------------------------------------
-
+// ----------------------------------------------------------------
 
 // @media only screen and (max-width:769px) {
 @media screen and (max-width:770px) {
@@ -496,12 +521,21 @@
 
 // ---------------------------------------------------
 
-@media screen and (max-width:500) {
+@media screen and (max-width:500px) {
 	.main {
 		.headline {
 			p {
 				&.headline_services {
 					margin: 0 18%;
+				}
+				&.headline_team {
+					margin: 0 22%;
+				}
+				&.headline_skills {
+					margin: 0 18%;
+				}
+				&.headline_form {
+					margin: 0 16%;
 				} 
 			}
 		}
@@ -509,12 +543,25 @@
 			height: 400px;
 			.wrapper_baner {
 				h1 {
-					width: 84%;
-					font-size: 2.2rem;
-					line-height: 3.8rem;
+					width: 70%;
+					font-size: 2rem;
+					line-height: 3.4rem;
 				}
 			}
 		}
+		.portfolio {
+			.wrapper_portfolio {
+				.desktops {
+					figure {
+						img {
+							height: 225px;
+						}
+					}
+				}
+			}
+		}
+
+		
 	}
 }
 
@@ -541,6 +588,9 @@
 			p {
 				font-size: 1.2rem;
 				margin-bottom: 0;
+				&.headline_services {
+					margin: 0 16%;
+				}
 				&.headline_team {
 					margin: 0 20%;
 				}
@@ -843,9 +893,13 @@
 			
 		}
 		.portfolio {
-			.desktops {
-				img {
-					height: 175px;
+			.wrapper_portfolio {
+				.desktops {
+					figure {
+						img {
+							height: 175px;
+						}
+					}
 				}
 			}
 		}

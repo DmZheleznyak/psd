@@ -14,7 +14,7 @@
 		// FastShell
 		$('.menu-toggle').click(function() {
 			$(this).toggleClass('active-menu')
-			$('.menu').slideToggle(300)
+			$('.menu').slideToggle('slow')
 		})
   });
 

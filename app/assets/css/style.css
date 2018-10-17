@@ -910,6 +910,11 @@ form {
   color: #fff;
   text-shadow: none; }
 
+@media screen and (min-width: 771px) {
+  .header .wrapper_header .nav .menu {
+    display: -ms-flexbox;
+    display: flex; } }
+
 @media screen and (max-width: 1028px) {
   .header .wrapper_head {
     max-width: 960px; }
@@ -1015,10 +1020,15 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 2.2rem; } }
 
-@media screen and (min-width: 771px) {
-  .header .wrapper_header .nav .menu {
-    display: -ms-flexbox;
-    display: flex; } }
+@media screen and (max-width: 905px) {
+  .header {
+    top: 40px; }
+  .main .testimonials .wrapper_testimonials .people_reviews article {
+    width: 51%; }
+    .main .testimonials .wrapper_testimonials .people_reviews article .review {
+      margin-left: 30px; }
+      .main .testimonials .wrapper_testimonials .people_reviews article .review h4 {
+        margin-top: 12px; } }
 
 @media screen and (max-width: 770px) {
   .header {
@@ -1194,15 +1204,23 @@ form {
     font-size: 2.4rem;
     line-height: 4rem; } }
 
-@media screen and (max-width: 500) {
+@media screen and (max-width: 500px) {
   .main .headline p.headline_services {
     margin: 0 18%; }
+  .main .headline p.headline_team {
+    margin: 0 22%; }
+  .main .headline p.headline_skills {
+    margin: 0 18%; }
+  .main .headline p.headline_form {
+    margin: 0 16%; }
   .main .baner {
     height: 400px; }
     .main .baner .wrapper_baner h1 {
-      width: 84%;
-      font-size: 2.2rem;
-      line-height: 3.8rem; } }
+      width: 70%;
+      font-size: 2rem;
+      line-height: 3.4rem; }
+  .main .portfolio .wrapper_portfolio .desktops figure img {
+    height: 225px; } }
 
 @media screen and (max-width: 430px) {
   .header {
@@ -1217,6 +1235,8 @@ form {
   .main .headline p {
     font-size: 1.2rem;
     margin-bottom: 0; }
+    .main .headline p.headline_services {
+      margin: 0 16%; }
     .main .headline p.headline_team {
       margin: 0 20%; }
     .main .headline p.headline_skills {
@@ -1395,7 +1415,7 @@ form {
     font-size: 1.4rem; }
   .main .team .wrapper_team .columns_team article h6, .main .team .wrapper_team .columns_team article p {
     font-size: 1.1rem; }
-  .main .portfolio .desktops img {
+  .main .portfolio .wrapper_portfolio .desktops figure img {
     height: 175px; }
   .main .testimonials .wrapper_testimonials .people_reviews article .review p {
     font-size: 1.3rem; }
