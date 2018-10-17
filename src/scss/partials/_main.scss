@@ -6,6 +6,7 @@
 		background-color:  $violet;
 		// wrapper in 'partials/wrapper.scss';
 		h1 {
+			width: 75%;
 			font-family: 'Titillium Web';
 			font-weight: bold;
 			font-size: 4.1rem;
@@ -13,7 +14,7 @@
 			text-align: center;
 			color: $white;
 			margin-top: -5%;
-			margin-bottom: 10%;
+			margin-bottom: 9%;
 		}		
 	}
 

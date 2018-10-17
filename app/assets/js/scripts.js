@@ -13,7 +13,7 @@
   $(function () {
 		// FastShell
 		$('.menu-toggle').click(function() {
-			$(this).toggleClass('active')
+			$(this).toggleClass('active-menu')
 			$('.menu').slideToggle(300)
 		})
   });

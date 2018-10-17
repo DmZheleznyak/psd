@@ -2,7 +2,9 @@
 
 // ------------------------------------------------------
 
-@media only screen and (max-width:1025px) {
+// @media only screen and (max-width:1025px) {
+@media screen and (max-width:1028px) {
+
 	.header {
 		.wrapper_head {
 			max-width: 960px;
@@ -25,6 +27,7 @@
 					font-size: 3.2rem;
 					margin-top: 0%;
 					margin-bottom: 5%;
+					width: 65%;
 				}
 				.btn-orange {
 					width: 26rem;
@@ -58,7 +61,6 @@
 			.wrapper_team {
 				@include indentsForSection(8%, 8%);
 				.columns_team {
-					flex-wrap: wrap;
 					article {
 						margin-top: 25px;
 						width: 50%;
@@ -179,9 +181,26 @@
 
 }
 
-//-----------------------------------------------------------------
+// ----------------------------------------------------------------
 
-@media only screen and (max-width:769px) {
+@media screen and (min-width: 771px) {
+	.header {
+		.wrapper_header {
+			.nav {
+				.menu {
+					display: flex;
+				}
+			}
+		}
+	}
+}
+
+// -----------------------------------------------------------------
+
+
+// @media only screen and (max-width:769px) {
+@media screen and (max-width:770px) {
+
 	.header {
 		top: 30px;
 		.wrapper_header {
@@ -422,7 +441,87 @@
 
 // ---------------------------------------------------
 
-@media only screen and (max-width:481px) {
+@media screen and (max-width:670px) {
+	.main {
+		.baner {
+			.wrapper_baner {
+				h1 {
+					width: 70%;
+				}
+			}
+		}
+		.services {
+			.columns_services {
+				flex-wrap: wrap;
+				article {
+					width: 50%;
+				}
+			}
+		}
+		.team {
+			.columns_team {
+				flex-wrap: wrap;
+				article {
+					width: 50%;
+				}
+			}
+		}
+		.testimonials {
+			.wrapper_testimonials {
+				.people_reviews {
+					article {
+						width: 70%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// --------------------------------------------------
+
+@media screen and (max-width:580px) {
+	.main {
+		.baner {
+			.wrapper_baner {
+				h1 {
+					width: 70%;
+					font-size: 2.4rem;
+					line-height: 4rem;
+				}
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------
+
+@media screen and (max-width:500) {
+	.main {
+		.headline {
+			p {
+				&.headline_services {
+					margin: 0 18%;
+				} 
+			}
+		}
+		.baner {
+			height: 400px;
+			.wrapper_baner {
+				h1 {
+					width: 84%;
+					font-size: 2.2rem;
+					line-height: 3.8rem;
+				}
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------
+
+// @media only screen and (max-width:481px) {
+@media screen and (max-width:430px) {
 	
 	.header {
 		top: 18px;
@@ -687,7 +786,9 @@
 // ------------------------------------------------------------------
 
 
-@media only screen and (max-width:376px) {
+// @media only screen and (max-width:376px) {
+	
+@media screen and (max-width:380px) {
 
 	.main {
 		.headline {
@@ -702,7 +803,6 @@
 					margin: 0 18%;
 				}
 				&.headline_form {
-					// white-space: normal;
 					margin: 0 16%;
 				}
 			} 
@@ -788,7 +888,78 @@
 
 
 
-}	
+}
+
+@media screen and (max-width: 325px) {
+	.main {
+		.headline {
+			p {
+				&.headline_team {
+					margin: 0 15%;
+				}
+				&.headline_skills {
+					margin: 0 12%;
+				}
+				&.headline_portfolio {
+					margin: 0 20%;
+				}
+			}
+		}
+		.team {
+			.wrapper_team {
+				.columns_team {
+					article {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.skills {
+			.wrapper_skills {
+				.columns_skills {
+					article {
+						.progress_bar {
+							img {
+								height: 90px;
+							}
+							p {
+								font-size: 2.8rem;
+								top: 27%;
+								left: 37%;
+							}
+						}
+						h4 {
+							font-size: 1.5rem;
+						}
+					}
+				}
+			}
+		}
+		.portfolio {
+			.wrapper_portfolio {
+				.desktops {
+					figure {
+						img {
+							height: 150px;
+						}
+					}
+				}
+			}
+		}
+		.testimonials {
+			.wrapper_testimonials {
+				.people_reviews {
+					article {
+						img {
+							height: 70px;
+							margin-left: 2%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 
 // --------------------------------------------------------------------

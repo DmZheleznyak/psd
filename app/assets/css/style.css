@@ -539,6 +539,7 @@ textarea {
       align-items: center;
   background-color: #87509C; }
   .main .baner h1 {
+    width: 75%;
     font-family: 'Titillium Web';
     font-weight: bold;
     font-size: 4.1rem;
@@ -546,7 +547,7 @@ textarea {
     text-align: center;
     color: #fff;
     margin-top: -5%;
-    margin-bottom: 10%; }
+    margin-bottom: 9%; }
 
 .main .services {
   background-color: #17C2A4; }
@@ -777,7 +778,7 @@ textarea {
   max-width: 1140px;
   margin: 0 auto; }
   .wrapper_baner {
-    padding-top: 19%;
+    padding-top: 22%;
     padding-bottom: 13%; }
   .wrapper_services {
     padding-top: 120px;
@@ -909,7 +910,7 @@ form {
   color: #fff;
   text-shadow: none; }
 
-@media only screen and (max-width: 1025px) {
+@media screen and (max-width: 1028px) {
   .header .wrapper_head {
     max-width: 960px; }
   .main .headline h2 {
@@ -923,7 +924,8 @@ form {
     .main .baner .wrapper_baner h1 {
       font-size: 3.2rem;
       margin-top: 0%;
-      margin-bottom: 5%; }
+      margin-bottom: 5%;
+      width: 65%; }
     .main .baner .wrapper_baner .btn-orange {
       width: 26rem; }
   .main .services .wrapper_services {
@@ -944,27 +946,24 @@ form {
   .main .team .wrapper_team {
     padding-top: 8%;
     padding-bottom: 8%; }
-    .main .team .wrapper_team .columns_team {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .main .team .wrapper_team .columns_team article {
-        margin-top: 25px;
-        width: 50%; }
-        .main .team .wrapper_team .columns_team article img {
-          height: 150px; }
-        .main .team .wrapper_team .columns_team article h4 {
-          font-size: 1.8rem;
-          margin-top: 10px; }
-        .main .team .wrapper_team .columns_team article h6 {
-          font-size: 1.3rem;
-          margin-bottom: 5px; }
-        .main .team .wrapper_team .columns_team article p {
-          font-size: 1.3rem; }
-        .main .team .wrapper_team .columns_team article .icons a {
-          width: 2.6rem;
-          height: 2.6rem; }
-          .main .team .wrapper_team .columns_team article .icons a i {
-            font-size: 1.4rem; }
+    .main .team .wrapper_team .columns_team article {
+      margin-top: 25px;
+      width: 50%; }
+      .main .team .wrapper_team .columns_team article img {
+        height: 150px; }
+      .main .team .wrapper_team .columns_team article h4 {
+        font-size: 1.8rem;
+        margin-top: 10px; }
+      .main .team .wrapper_team .columns_team article h6 {
+        font-size: 1.3rem;
+        margin-bottom: 5px; }
+      .main .team .wrapper_team .columns_team article p {
+        font-size: 1.3rem; }
+      .main .team .wrapper_team .columns_team article .icons a {
+        width: 2.6rem;
+        height: 2.6rem; }
+        .main .team .wrapper_team .columns_team article .icons a i {
+          font-size: 1.4rem; }
   .main .skills .wrapper_skills {
     padding-top: 8%;
     padding-bottom: 8%; }
@@ -1016,7 +1015,12 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 2.2rem; } }
 
-@media only screen and (max-width: 769px) {
+@media screen and (min-width: 771px) {
+  .header .wrapper_header .nav .menu {
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media screen and (max-width: 770px) {
   .header {
     top: 30px; }
     .header .wrapper_header {
@@ -1168,7 +1172,39 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 1.8rem; } }
 
-@media only screen and (max-width: 481px) {
+@media screen and (max-width: 670px) {
+  .main .baner .wrapper_baner h1 {
+    width: 70%; }
+  .main .services .columns_services {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .main .services .columns_services article {
+      width: 50%; }
+  .main .team .columns_team {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .main .team .columns_team article {
+      width: 50%; }
+  .main .testimonials .wrapper_testimonials .people_reviews article {
+    width: 70%; } }
+
+@media screen and (max-width: 580px) {
+  .main .baner .wrapper_baner h1 {
+    width: 70%;
+    font-size: 2.4rem;
+    line-height: 4rem; } }
+
+@media screen and (max-width: 500) {
+  .main .headline p.headline_services {
+    margin: 0 18%; }
+  .main .baner {
+    height: 400px; }
+    .main .baner .wrapper_baner h1 {
+      width: 84%;
+      font-size: 2.2rem;
+      line-height: 3.8rem; } }
+
+@media screen and (max-width: 430px) {
   .header {
     top: 18px; }
     .header .wrapper_header {
@@ -1340,7 +1376,7 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 1.4rem; } }
 
-@media only screen and (max-width: 376px) {
+@media screen and (max-width: 380px) {
   .main .headline p.headline_services {
     margin: 0 18%; }
   .main .headline p.headline_team {
@@ -1376,6 +1412,29 @@ form {
             flex-wrap: wrap; }
         .footer .wrapper nav ul li {
           width: 33%; } }
+
+@media screen and (max-width: 325px) {
+  .main .headline p.headline_team {
+    margin: 0 15%; }
+  .main .headline p.headline_skills {
+    margin: 0 12%; }
+  .main .headline p.headline_portfolio {
+    margin: 0 20%; }
+  .main .team .wrapper_team .columns_team article {
+    width: 100%; }
+  .main .skills .wrapper_skills .columns_skills article .progress_bar img {
+    height: 90px; }
+  .main .skills .wrapper_skills .columns_skills article .progress_bar p {
+    font-size: 2.8rem;
+    top: 27%;
+    left: 37%; }
+  .main .skills .wrapper_skills .columns_skills article h4 {
+    font-size: 1.5rem; }
+  .main .portfolio .wrapper_portfolio .desktops figure img {
+    height: 150px; }
+  .main .testimonials .wrapper_testimonials .people_reviews article img {
+    height: 70px;
+    margin-left: 2%; } }
 
 @media print {
   * {
