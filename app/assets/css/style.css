@@ -915,7 +915,7 @@ form {
     display: -ms-flexbox;
     display: flex; } }
 
-@media screen and (max-width: 1028px) {
+@media screen and (max-width: 1025px) {
   .header .wrapper_head {
     max-width: 960px; }
   .main .headline h2 {
@@ -1030,7 +1030,7 @@ form {
       .main .testimonials .wrapper_testimonials .people_reviews article .review h4 {
         margin-top: 12px; } }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 769px) {
   .header {
     top: 30px; }
     .header .wrapper_header {
@@ -1038,7 +1038,8 @@ form {
       .header .wrapper_header .logo {
         height: 32px; }
       .header .wrapper_header .nav {
-        margin-right: 28px; }
+        margin-right: 28px;
+        position: relative; }
         .header .wrapper_header .nav .menu-toggle {
           display: inline-block;
           border: none;
@@ -1054,6 +1055,20 @@ form {
               margin-top: 6px; }
         .header .wrapper_header .nav .menu {
           display: none; }
+          .header .wrapper_header .nav .menu-visible {
+            display: block;
+            position: absolute;
+            height: auto;
+            background: rgba(4, 17, 50, 0.8);
+            border-radius: 8px;
+            width: 100px;
+            padding-left: 30%;
+            top: -45%;
+            right: 110%; }
+            .header .wrapper_header .nav .menu-visible li {
+              margin-left: 0; }
+              .header .wrapper_header .nav .menu-visible li a {
+                padding: 10px 0; }
   .main .headline h2 {
     font-size: 2.6rem; }
   .main .headline p {
@@ -1222,7 +1237,7 @@ form {
   .main .portfolio .wrapper_portfolio .desktops figure img {
     height: 225px; } }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 426px) {
   .header {
     top: 18px; }
     .header .wrapper_header {
@@ -1396,7 +1411,7 @@ form {
       .footer .wrapper .nav ul li a {
         font-size: 1.4rem; } }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 376px) {
   .main .headline p.headline_services {
     margin: 0 18%; }
   .main .headline p.headline_team {
@@ -1433,7 +1448,7 @@ form {
         .footer .wrapper nav ul li {
           width: 33%; } }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 326px) {
   .main .headline p.headline_team {
     margin: 0 15%; }
   .main .headline p.headline_skills {

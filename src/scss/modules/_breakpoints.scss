@@ -1,7 +1,6 @@
 @import '../mixins/indents';
 
-// ------------------------------------------------------
-
+// ----------------------------------------------
 
 @media screen and (min-width: 771px) {
 	.header {
@@ -15,10 +14,9 @@
 	}
 }
 
-// -----------------------------------------------------------------
+// -----------------------------------------------
 
-// @media only screen and (max-width:1025px) {
-@media screen and (max-width:1028px) {
+@media screen and (max-width:1025px) {
 
 	.header {
 		.wrapper_head {
@@ -223,8 +221,7 @@
 
 // ----------------------------------------------------------------
 
-// @media only screen and (max-width:769px) {
-@media screen and (max-width:770px) {
+@media screen and (max-width:769px) {
 
 	.header {
 		top: 30px;
@@ -235,6 +232,7 @@
 			}
 			.nav {
 				margin-right: 28px;
+				position: relative;
 				.menu-toggle {
 					display: inline-block;
 					border: none;
@@ -253,6 +251,23 @@
 				}
 				.menu {
 					display: none;
+					&-visible {
+						display: block;
+						position: absolute;
+						height: auto;
+						background: rgba(4,17,50,0.8);
+						border-radius: 8px;
+						width: 100px;
+						padding-left: 30%;
+						top: -45%;
+						right: 110%;		
+						li {
+							margin-left: 0;
+							a {
+								padding: 10px 0;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -567,8 +582,7 @@
 
 // ---------------------------------------------------
 
-// @media only screen and (max-width:481px) {
-@media screen and (max-width:430px) {
+@media screen and (max-width:426px) {
 	
 	.header {
 		top: 18px;
@@ -834,11 +848,8 @@
 }
 
 // ------------------------------------------------------------------
-
-
-// @media only screen and (max-width:376px) {
 	
-@media screen and (max-width:380px) {
+@media screen and (max-width:376px) {
 
 	.main {
 		.headline {
@@ -944,7 +955,9 @@
 
 }
 
-@media screen and (max-width: 325px) {
+// -------------------------------------------------------
+
+@media screen and (max-width: 326px) {
 	.main {
 		.headline {
 			p {
@@ -1014,7 +1027,6 @@
 		}
 	}
 }
-
 
 // --------------------------------------------------------------------
 
