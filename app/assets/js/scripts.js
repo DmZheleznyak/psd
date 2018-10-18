@@ -14,12 +14,21 @@
 		// FastShell
 		$('.menu-toggle').click(function(event)	{
 			event.stopPropagation();
-			
+
 			$(this).toggleClass('active');
 			
 			$('.menu').toggleClass('menu-visible');
 			
 		});
+
+		$(document).click( function( event ) {
+			var menuMobile = $('.menu-visible');
+
+			if ( menuMobile.has( event.target ).length === 0) {
+				menuMobile.toggleClass('menu-visible');
+			}
+		});
+
   });
 
 })(jQuery, window, document);
