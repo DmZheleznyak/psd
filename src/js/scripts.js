@@ -4,7 +4,6 @@
 
   $(function () {
 		// FastShell
-
   });
 
 })(jQuery, window, document);

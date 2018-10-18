@@ -11,6 +11,7 @@
 	'use strict';
 
   $(function () {
+		// FastShell
 		// button hamburger
 		$('.menu-toggle').click(function(event)	{
 			event.stopPropagation();
@@ -24,14 +25,19 @@
 		// close menu if doesn't click on "button close"
 		$(document).click( function( event ) {
 			var menuMobile = $('.menu-visible');
-			var buttonMenu = $('menu-toggle')
+			var buttonMenu = $('.menu-toggle');
 
 			if ( menuMobile.has( event.target ).length === 0) {
 				menuMobile.toggleClass('menu-visible');
 				buttonMenu.toggleClass('active');
-			}
-		});
+			};
 
+			if ( $(buttonMenu).hasClass('active') ) {
+				buttonMenu.toggleClass('active');
+			}
+
+		});
+		
   });
 
 })(jQuery, window, document);
