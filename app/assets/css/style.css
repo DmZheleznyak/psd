@@ -504,6 +504,8 @@ textarea {
     .header .wrapper_header .logo {
       height: 36px;
       margin-left: 43px; }
+      .header .wrapper_header .logo:hover {
+        height: 42px; }
     .header .wrapper_header .nav {
       margin-right: 35px; }
       .header .wrapper_header .nav ul {
@@ -1046,13 +1048,24 @@ form {
           background-color: transparent;
           padding: 0;
           width: 40px;
-          cursor: pointer; }
+          cursor: pointer;
+          outline: 0; }
           .header .wrapper_header .nav .menu-toggle span {
             display: block;
             height: 3px;
             background: #fff; }
             .header .wrapper_header .nav .menu-toggle span + span {
               margin-top: 6px; }
+          .header .wrapper_header .nav .menu-toggle.active span:first-child {
+            top: 0;
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+          .header .wrapper_header .nav .menu-toggle.active span:last-child {
+            bottom: 0;
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+          .header .wrapper_header .nav .menu-toggle.active .menu_span-close {
+            background: none; }
         .header .wrapper_header .nav .menu {
           display: none; }
           .header .wrapper_header .nav .menu-visible {

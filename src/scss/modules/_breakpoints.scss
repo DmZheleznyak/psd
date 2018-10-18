@@ -240,12 +240,28 @@
 					padding: 0;
 					width: 40px;
 					cursor: pointer;
+					outline: 0;
 					span {
 						display: block;
 						height: 3px;
 						background: $white;
 						+ span {
 							margin-top: 6px;
+						}
+					}
+					&.active {
+						span {
+							&:first-child {
+								top: 0;
+								transform: rotate(45deg);
+							}
+							&:last-child {
+								bottom: 0;
+								transform: rotate(-45deg);
+							}
+						}
+						.menu_span-close {
+							background: none;
 						}
 					}
 				}

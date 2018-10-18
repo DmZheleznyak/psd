@@ -13,6 +13,9 @@
 		.logo {
 			height: 36px;
 			margin-left: 43px;
+			&:hover {
+				height: 42px;
+			}
 		}
 		.nav {
 			margin-right: 35px;
