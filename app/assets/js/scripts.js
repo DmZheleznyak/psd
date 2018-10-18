@@ -12,7 +12,12 @@
 
   $(function () {
 		// FastShell
-
+		$('.menu-toggle').click(function(event)	{
+			
+			$(this).toggleClass('active');
+			
+			$('.menu').toggleClass('menu-visible');
+		});
   });
 
 })(jQuery, window, document);

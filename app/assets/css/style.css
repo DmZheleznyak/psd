@@ -1210,6 +1210,8 @@ form {
         flex-wrap: wrap; }
     .main .team .columns_team article {
       width: 50%; }
+  .main .portfolio .desktops figure img {
+    height: 250px; }
   .main .testimonials .wrapper_testimonials .people_reviews article {
     width: 70%; } }
 
@@ -1217,7 +1219,9 @@ form {
   .main .baner .wrapper_baner h1 {
     width: 70%;
     font-size: 2.4rem;
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  .footer .wrapper .nav ul li a {
+    font-size: 1.6rem; } }
 
 @media screen and (max-width: 500px) {
   .main .headline p.headline_services {
@@ -1234,6 +1238,13 @@ form {
       width: 70%;
       font-size: 2rem;
       line-height: 3.4rem; }
+  .main .skills .wrapper_skills .columns_skills {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .main .skills .wrapper_skills .columns_skills article {
+      width: 50%; }
+      .main .skills .wrapper_skills .columns_skills article .progress_bar p {
+        left: 41%; }
   .main .portfolio .wrapper_portfolio .desktops figure img {
     height: 225px; } }
 
@@ -1312,23 +1323,19 @@ form {
   .main .skills .wrapper_skills {
     padding-top: 4%;
     padding-bottom: 4%; }
-    .main .skills .wrapper_skills .columns_skills {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-      .main .skills .wrapper_skills .columns_skills article {
-        width: 50%;
-        margin-top: 24px; }
-        .main .skills .wrapper_skills .columns_skills article .progress_bar img {
-          height: 100px; }
-        .main .skills .wrapper_skills .columns_skills article .progress_bar p {
-          font-size: 2.8r;
-          top: 26%;
-          left: 40%;
-          margin: 0; }
-        .main .skills .wrapper_skills .columns_skills article h4 {
-          font-size: 1.6rem;
-          margin-top: 10px;
-          margin-bottom: 0px; }
+    .main .skills .wrapper_skills .columns_skills article {
+      margin-top: 24px; }
+      .main .skills .wrapper_skills .columns_skills article .progress_bar img {
+        height: 100px; }
+      .main .skills .wrapper_skills .columns_skills article .progress_bar p {
+        font-size: 2.8r;
+        top: 26%;
+        left: 40%;
+        margin: 0; }
+      .main .skills .wrapper_skills .columns_skills article h4 {
+        font-size: 1.6rem;
+        margin-top: 10px;
+        margin-bottom: 0px; }
   .main .portfolio .wrapper_portfolio {
     padding-top: 4%;
     padding-bottom: 4%; }
@@ -1407,9 +1414,15 @@ form {
   .footer {
     height: 70px; }
     .footer .wrapper {
-      padding-top: 18px; }
-      .footer .wrapper .nav ul li a {
-        font-size: 1.4rem; } }
+      padding-top: 18px;
+      padding-bottom: 10px; }
+      .footer .wrapper .nav ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        .footer .wrapper .nav ul li {
+          width: 33%; }
+          .footer .wrapper .nav ul li a {
+            font-size: 1.4rem; } }
 
 @media screen and (max-width: 376px) {
   .main .headline p.headline_services {

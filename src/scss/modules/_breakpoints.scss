@@ -506,6 +506,15 @@
 				}
 			}
 		}
+		.portfolio {
+			.desktops {
+				figure {
+					img {
+						height: 250px;
+					}
+				}
+			}
+		}
 		.testimonials {
 			.wrapper_testimonials {
 				.people_reviews {
@@ -528,6 +537,19 @@
 					width: 70%;
 					font-size: 2.4rem;
 					line-height: 4rem;
+				}
+			}
+		}
+	}
+	.footer {
+		.wrapper {
+			.nav {
+				ul {
+					li {
+						a {
+							font-size: 1.6rem;
+						}
+					}
 				}
 			}
 		}
@@ -561,6 +583,21 @@
 					width: 70%;
 					font-size: 2rem;
 					line-height: 3.4rem;
+				}
+			}
+		}
+		.skills {
+			.wrapper_skills {
+				.columns_skills {
+					flex-wrap: wrap;
+					article {
+						width: 50%;
+						.progress_bar {
+							p {
+								left: 41%;
+							}
+						}
+					} 
 				}
 			}
 		}
@@ -692,9 +729,7 @@
 			.wrapper_skills {
 				@include indentsForSection(4%, 4%);
 				.columns_skills {
-					flex-wrap: wrap;
 					article {
-						width: 50%;
 						margin-top: 24px;
 						.progress_bar {
 							img {
@@ -833,9 +868,12 @@
 		height: 70px;
 		.wrapper {
 			padding-top: 18px;
+			padding-bottom: 10px;
 			.nav {
 				ul {
+					flex-wrap: wrap;
 					li {
+						width: 33%;
 						a {
 							font-size: 1.4rem;
 						}
