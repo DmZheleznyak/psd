@@ -13,10 +13,12 @@
   $(function () {
 		// FastShell
 		$('.menu-toggle').click(function(event)	{
+			event.stopPropagation();
 			
 			$(this).toggleClass('active');
 			
 			$('.menu').toggleClass('menu-visible');
+			
 		});
   });
 
