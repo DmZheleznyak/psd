@@ -13,21 +13,6 @@
   $(function () {
 		// FastShell
 
-		$('.menu-toggle').click( function( event ) {
-			event.stopPropagation()
-
-			$(this).toggleClass('active');
-
-			// console.log( $('.menu').hasClass('menu-visible') )
-
-			// if ( $('.menu').hasClass('menu-visible') ) {
-			// 	$('.menu').removeClass('menu-visible'); return;
-			// } 
-			
-			$('.menu').toggleClass('menu-visible');
-			$('.menu-visible').slideToggle(400);
-
-		});
   });
 
 })(jQuery, window, document);
